@@ -1,0 +1,62 @@
+@import '/assets/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+$class-colors: (
+  'p-light': $black,
+  'p-lightS': $blackS,
+  's-light': $white,
+  'p-dark': $white,
+  's-dark': $black,
+  's-darkS': $blackS,
+  'p-blue': $blue,
+  'p-grey': $grey,
+
+);
+
+@each $key, $val in $class-colors {
+  .text-color-#{$key} {
+    color: #{$val} !important;
+  }
+
+  .bg-color-#{$key},
+  .btn-color-#{$key}:after,
+  .btn-choose-#{$key}:after {
+    background-color: #{$val} !important;
+  }
+
+  .border-color-#{$key} {
+    border-color: #{$val} !important;
+  }
+}
+
+.body {
+  min-height: 450vh;
+}
+
+.base-container {
+  padding: 5vw;
+
+
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $blue;
+
+}
+
+
