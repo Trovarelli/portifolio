@@ -1,7 +1,6 @@
 # Portfólio – José Trovarelli Neto (Next.js + Tailwind)
 
 Projeto de portfólio construído com **Next.js 14 (App Router)** + **Tailwind CSS** e **TypeScript**.
-Pronto para publicar no **GitHub Pages** (via `next export`) ou **Vercel**.
 
 ## Scripts
 - `npm run dev` – ambiente local
