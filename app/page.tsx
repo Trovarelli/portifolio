@@ -13,8 +13,9 @@ export default function Page() {
       <Header />
       <section className="mt-10 grid md:grid-cols-3 gap-6">
         <div className="md:col-span-2 bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 rounded-2xl p-6">
-          <h2 className="text-lg font-medium mb-2">Olá! 👋</h2>
-          <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{profile.about}</p>
+          <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+            {profile.about}
+          </p>
           <div className="mt-4 flex flex-wrap gap-2">
             {profile.tech.map((t) => (
               <span
