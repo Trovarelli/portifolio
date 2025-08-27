@@ -89,8 +89,7 @@ export default function Page() {
       <section id="contato" className="mt-12">
         <h2 className="text-lg font-medium mb-2">Contato</h2>
         <p className="text-slate-600 dark:text-slate-300 text-sm">
-          Aberto a propostas remotas. Me envie um e-mail ou mensagem no
-          LinkedIn.
+          Me envie um e-mail ou mensagem no LinkedIn.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <a
