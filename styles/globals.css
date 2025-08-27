@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
-
-body {
-  @apply bg-zinc-950 text-zinc-50;
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100;
+  }
 }

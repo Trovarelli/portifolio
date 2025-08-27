@@ -13,7 +13,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function() {
+              const theme = localStorage.getItem('theme');
+              const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              if (theme === 'dark' || (!theme && systemDark)) {
+                document.documentElement.classList.add('dark');
+              }
+            })();
+          `,
+          }}
+        />
+      </head>
       <body>
         <div className="max-w-6xl mx-auto px-4 py-8">{children}</div>
       </body>
