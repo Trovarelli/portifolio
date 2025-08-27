@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Portfólio de José Trovarelli Neto - Front-end (React/Next.js) e Back-end (Golang)",
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function RootLayout({
   children,
 }: {
@@ -15,6 +17,16 @@ export default function RootLayout({
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <head>
+        <link
+          rel="icon"
+          href={`${basePath}/favicon.svg`}
+          type="image/svg+xml"
+        />
+        <link rel="alternate icon" href={`${basePath}/favicon.ico`} />
+        <link
+          rel="apple-touch-icon"
+          href={`${basePath}/apple-touch-icon.png`}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
