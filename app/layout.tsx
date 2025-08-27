@@ -15,7 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" suppressHydrationWarning>
+    <html
+      lang="pt-br"
+      suppressHydrationWarning
+      className="scroll-smooth motion-reduce:scroll-auto"
+    >
       <head>
         <link
           rel="icon"
