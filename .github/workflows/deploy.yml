@@ -35,7 +35,6 @@ jobs:
           else
             echo "NEXT_PUBLIC_BASE_PATH=/${REPO_NAME}" >> $GITHUB_ENV
           fi
-          echo "NODE_ENV=production" >> $GITHUB_ENV
 
       - name: Install
         run: npm ci
