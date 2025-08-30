@@ -5,14 +5,10 @@ import { Sun, Moon, Monitor, Check, Palette } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
 
 export default function ThemeDropdown() {
-  const { mode, setMode, theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const { mode, setMode } = useTheme();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => setMounted(true), []);
-
-  // Fecha ao clicar fora
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) {
@@ -53,7 +49,6 @@ export default function ThemeDropdown() {
 
   return (
     <div className="relative inline-block" ref={ref}>
-      {/* Botão que abre o dropdown */}
       <button
         onClick={() => setOpen((o) => !o)}
         className="inline-flex h-10 w-10 items-center justify-center rounded-full

@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: "TAHR - Technology Applied to Human Resources",
     description:
       "Sistema de upload e gerenciamento de curriculos feito com React, Next, Tailwind. Auth JWT, Express, TypeScript e MongoDB.",
-    stack: ["React", "Next.js", "Tailwind", "Node.js"],
+    stack: ["React", "Next.js", "Tailwind", "Node.js", "Express", "MongoDB", "TypeScript", "Docker", "JWT"],
     live: "https://tahr.vercel.app/",
     repo: [
       {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     title: "Cadastro de Clientes  (vue-crud-app)",
     description:
       "Sistema simples de cadastro de clientes e associação de produtos feito com Vue.js, Vuex, Vuetify e TypeScript.",
-    stack: ["React", "Next.js", "Tailwind", "Node.js"],
+    stack: ["Vue.js", "Vuex", "Vuetify", "TypeScript"],
     live: "https://vue-crud-app-7e3w.onrender.com/",
     repo: [
       {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: "NLW - Next Level Week (Rocketseat)",
     description:
       "Sistema simples desenvolvido com Next.js, o intuito do projeto é auxiliar jogadores encontrarem novos jogadores dos seus games favoritos para jogarem juntos. Desenvolvido com React, Next.js, Tailwind, Node.js, TypeScript, Tailwind, Prisma e PostgreSQL.",
-    stack: ["React", "Next.js", "Tailwind", "Node.js"],
+    stack: ["React", "Next.js", "Tailwind", "Node.js", "Prisma", "PostgreSQL"],
     live: "https://rocketseat-nlw-project.netlify.app/",
     repo: [
       {
