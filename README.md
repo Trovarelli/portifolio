@@ -47,5 +47,3 @@ Sou desenvolvedor apaixonado por tecnologia, com experiência em projetos web mo
 ---
 
 ### Obrigado pela visita!
-
-Se gostou do portfólio, entre em contato para conversarmos sobre oportunidades!
