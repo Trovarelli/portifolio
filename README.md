@@ -37,7 +37,7 @@ Sou desenvolvedor apaixonado por tecnologia, com experiência em projetos web mo
 
 ## 📧 Contato
 
-- [LinkedIn](https://www.linkedin.com/in/trovarelli/](https://www.linkedin.com/in/jos%C3%A9-trovarelli-neto-31b2801b9/))
+- [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-trovarelli-neto-31b2801b9/)
 - [E-mail](mailto:jtneto.dev@gmail.com)
 
 ---
