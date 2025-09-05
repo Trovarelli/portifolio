@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCarousel from "@/components/ProjectCarousel";
 import ExperienceItem from "@/components/ExperienceItem";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
@@ -69,11 +69,7 @@ export default function Page() {
             {projects.length} projetos
           </span>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {projects.map((p) => (
-            <ProjectCard key={p.title} p={p} />
-          ))}
-        </div>
+        <ProjectCarousel projects={projects} />
       </section>
       <section id="experiencia" className="mt-12">
         <div className="flex items-center gap-2 mb-4">

@@ -7,7 +7,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const profile = {
   name: "José Trovarelli Neto",
   headline: "Front-end (React/Next.js) • Back-end (Golang)",
-  about: `Desenvolvedor com ${experienciaCalculada} de experiência no desenvolvimento de softwares escaláveis, com forte interesse em criar soluções digitais de alta performance. Tenho foco em qualidade de código, experiência do usuário e geração de valor para o negócio. Atuei em produtos B2B e B2C, participando desde a concepção até a entrega em produção. Atualmente, busco oportunidades remotas que me permitam evoluir profissionalmente, aprofundar conhecimentos em front-end e colaborar com equipes engajadas em projetos desafiadores.`,
+  about: `Desenvolvedor web com ${experienciaCalculada} de experiência na criação de soluções escaláveis e de alta performance, com especialização em Golang e Node.js. Tenho forte foco em arquitetura de sistemas, qualidade de código e eficiência no processamento de dados. Atuei em produtos B2B e B2C, participando ativamente desde a concepção técnica até a entrega em produção. Busco oportunidades remotas que permitam aprofundar meu domínio em backend, contribuir com times técnicos engajados e participar de projetos desafiadores com impacto real no negócio.`,
   location: "Brasil • Remoto",
   email: "jtneto.dev@gmail.com",
   github: "https://github.com/Trovarelli",
