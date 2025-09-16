@@ -1,55 +1,73 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
+import "swiper/css";
+
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProjectCard from "@/components/ProjectCard";
 import type { Project } from "@/data/projects";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ProjectCarousel({ projects }: { projects: Project[] }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const scroll = (direction: "left" | "right") => {
-    const container = containerRef.current;
-    if (!container) return;
-    const scrollAmount = container.clientWidth;
-    container.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth",
-    });
-  };
+  const swiperRef = useRef<SwiperType | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
 
   return (
     <div className="relative">
-      <div
-        ref={containerRef}
-        className="flex overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      <Swiper
+        spaceBetween={24}
+        slidesPerView={1}
+        breakpoints={{ 640: { slidesPerView: 2 } }}
+        onSwiper={(s) => {
+          swiperRef.current = s;
+          setIsBeginning(s.isBeginning);
+          setIsEnd(s.isEnd);
+        }}
+        onSlideChange={(s) => {
+          setIsBeginning(s.isBeginning);
+          setIsEnd(s.isEnd);
+        }}
+        watchOverflow
+        observer
+        observeParents
+        className="pb-4"
       >
         {projects.map((p) => (
-          <div
-            key={p.title}
-            className="snap-center flex-shrink-0 basis-full sm:basis-1/2"
-          >
+          <SwiperSlide key={p.title}>
             <ProjectCard p={p} />
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
+
       <button
         type="button"
-        onClick={() => scroll("left")}
-        className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 shadow-md"
         aria-label="Projetos anteriores"
+        disabled={isBeginning}
+        onClick={() => swiperRef.current?.slidePrev()}
+        className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 shadow-md ${
+          isBeginning
+            ? "opacity-40 cursor-not-allowed pointer-events-none shadow-none"
+            : ""
+        }`}
       >
         <ChevronLeft className="h-5 w-5" />
       </button>
+
       <button
         type="button"
-        onClick={() => scroll("right")}
-        className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 shadow-md"
         aria-label="Próximos projetos"
+        disabled={isEnd}
+        onClick={() => swiperRef.current?.slideNext()}
+        className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 shadow-md ${
+          isEnd
+            ? "opacity-40 cursor-not-allowed pointer-events-none shadow-none"
+            : ""
+        }`}
       >
         <ChevronRight className="h-5 w-5" />
       </button>
     </div>
   );
 }
-
