@@ -2,9 +2,25 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "José Trovarelli Neto • Portfólio",
+  title: "José Trovarelli Neto • Full Stack Developer",
   description:
-    "Portfólio de José Trovarelli Neto - Front-end (React/Next.js) e Back-end (Golang)",
+    "Desenvolvedor Full Stack especializado em React, Next.js, TypeScript e Golang. Experiência em arquitetura de sistemas e soluções escaláveis.",
+  keywords: ["José Trovarelli", "Full Stack Developer", "React", "Next.js", "TypeScript", "Golang", "Node.js", "Desenvolvedor"],
+  authors: [{ name: "José Trovarelli Neto" }],
+  creator: "José Trovarelli Neto",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://trovarelli.github.io/portifolio/",
+    title: "José Trovarelli Neto • Full Stack Developer",
+    description: "Desenvolvedor Full Stack especializado em React, Next.js, TypeScript e Golang.",
+    siteName: "José Trovarelli Neto - Portfólio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "José Trovarelli Neto • Full Stack Developer",
+    description: "Desenvolvedor Full Stack especializado em React, Next.js, TypeScript e Golang.",
+  },
 };
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";

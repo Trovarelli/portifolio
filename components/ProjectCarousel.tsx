@@ -16,6 +16,15 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
 
   return (
     <div className="relative">
+      <style jsx global>{`
+        .project-swiper .swiper-wrapper {
+          align-items: stretch !important;
+        }
+        .project-swiper .swiper-slide {
+          height: auto !important;
+          display: flex !important;
+        }
+      `}</style>
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
@@ -32,10 +41,10 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
         watchOverflow
         observer
         observeParents
-        className="pb-4"
+        className="pb-4 project-swiper"
       >
         {projects.map((p) => (
-          <SwiperSlide key={p.title}>
+          <SwiperSlide key={p.title} className="h-full">
             <ProjectCard p={p} />
           </SwiperSlide>
         ))}
