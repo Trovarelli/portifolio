@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
@@ -15,7 +16,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative group/carousel">
       <style jsx global>{`
         .project-swiper .swiper-wrapper {
           align-items: stretch !important;
@@ -29,6 +30,13 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
         spaceBetween={24}
         slidesPerView={1}
         breakpoints={{ 640: { slidesPerView: 2 } }}
+        modules={[Mousewheel]}
+        mousewheel={{
+          forceToAxis: true,
+          sensitivity: 0.5,
+          thresholdDelta: 10,
+          thresholdTime: 300,
+        }}
         onSwiper={(s) => {
           swiperRef.current = s;
           setIsBeginning(s.isBeginning);
@@ -55,10 +63,10 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
         aria-label="Projetos anteriores"
         disabled={isBeginning}
         onClick={() => swiperRef.current?.slidePrev()}
-        className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 shadow-md ${
+        className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-700 shadow-lg opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-200 ${
           isBeginning
-            ? "opacity-40 cursor-not-allowed pointer-events-none shadow-none"
-            : ""
+            ? "!opacity-0 cursor-not-allowed pointer-events-none"
+            : "hover:scale-110"
         }`}
       >
         <ChevronLeft className="h-5 w-5" />
@@ -69,10 +77,10 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
         aria-label="Próximos projetos"
         disabled={isEnd}
         onClick={() => swiperRef.current?.slideNext()}
-        className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 shadow-md ${
+        className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-700 shadow-lg opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-200 ${
           isEnd
-            ? "opacity-40 cursor-not-allowed pointer-events-none shadow-none"
-            : ""
+            ? "!opacity-0 cursor-not-allowed pointer-events-none"
+            : "hover:scale-110"
         }`}
       >
         <ChevronRight className="h-5 w-5" />

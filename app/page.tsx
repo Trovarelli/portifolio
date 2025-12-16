@@ -5,6 +5,7 @@ import ExperienceItem from "@/components/ExperienceItem";
 import SkillsShowcase from "@/components/SkillsShowcase";
 import ScrollProgress from "@/components/ScrollProgress";
 import AnimatedSection from "@/components/AnimatedSection";
+import GitHubRepos from "@/components/GitHubRepos";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
 import { experiences } from "@/data/experience";
@@ -96,6 +97,11 @@ export default function Page() {
             </span>
           </div>
           <ProjectCarousel projects={projects} />
+        </AnimatedSection>
+
+        {/* GitHub Repos Section */}
+        <AnimatedSection delay={0.25}>
+          <GitHubRepos username={profile.githubUsername} />
         </AnimatedSection>
 
         {/* Experience Section */}

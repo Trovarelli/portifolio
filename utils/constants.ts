@@ -1,5 +1,4 @@
 export const designTokens = {
-  // Cores de destaque
   colors: {
     primary: {
       DEFAULT: 'rgb(99, 102, 241)', // indigo-500
@@ -15,7 +14,6 @@ export const designTokens = {
     warning: 'rgb(251, 146, 60)', // orange-400
   },
 
-  // Animações
   animations: {
     durations: {
       fast: '150ms',
@@ -30,7 +28,6 @@ export const designTokens = {
     },
   },
 
-  // Glassmorphism
   glass: {
     light: 'rgba(255, 255, 255, 0.1)',
     lightStrong: 'rgba(255, 255, 255, 0.2)',
@@ -38,7 +35,6 @@ export const designTokens = {
     darkStrong: 'rgba(0, 0, 0, 0.2)',
   },
 
-  // Sombras
   shadows: {
     glow: '0 0 20px rgba(99, 102, 241, 0.3)',
     glowStrong: '0 0 40px rgba(99, 102, 241, 0.5)',
@@ -46,7 +42,6 @@ export const designTokens = {
   },
 } as const;
 
-// Variantes de animação para Framer Motion
 export const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -77,7 +72,6 @@ export const slideInRight = {
   transition: { duration: 0.5 },
 };
 
-// Container com stagger para filhos
 export const staggerContainer = {
   initial: {},
   animate: {

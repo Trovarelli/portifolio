@@ -81,15 +81,15 @@ export default function SkillsShowcase() {
       {/* Legenda */}
       <div className="mt-6 flex flex-wrap gap-4 text-xs text-slate-600 dark:text-slate-400">
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-slate-700 to-slate-600" />
+          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-500" />
           <span>Expert</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-slate-600 to-slate-500" />
+          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500" />
           <span>Avançado</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-slate-500 to-slate-400" />
+          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-500" />
           <span>Intermediário</span>
         </div>
       </div>

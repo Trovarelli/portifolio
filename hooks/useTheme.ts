@@ -1,4 +1,3 @@
-// hooks/useTheme.ts
 "use client";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
@@ -51,7 +50,7 @@ export function useTheme() {
 
   const toggle = useCallback(() => {
     const next: Theme = getDomTheme() === "dark" ? "light" : "dark";
-    setMode(next); // fixa escolha explícita
+    setMode(next);
   }, []);
 
   return { mode, setMode, theme, setTheme: (t: Theme) => setMode(t), toggle };

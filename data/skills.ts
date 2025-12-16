@@ -5,7 +5,6 @@ export type Skill = {
 };
 
 export const skills: Skill[] = [
-    // Frontend
     { name: 'React', category: 'frontend', level: 'expert' },
     { name: 'Next.js', category: 'frontend', level: 'expert' },
     { name: 'TypeScript', category: 'frontend', level: 'expert' },
@@ -14,7 +13,6 @@ export const skills: Skill[] = [
     { name: 'Vue.js', category: 'frontend', level: 'advanced' },
     { name: 'HTML/CSS', category: 'frontend', level: 'expert' },
 
-    // Backend
     { name: 'Golang', category: 'backend', level: 'advanced' },
     { name: 'Node.js', category: 'backend', level: 'advanced' },
     { name: 'Express', category: 'backend', level: 'advanced' },
@@ -23,10 +21,8 @@ export const skills: Skill[] = [
     { name: 'REST APIs', category: 'backend', level: 'expert' },
     { name: 'Prisma', category: 'backend', level: 'advanced' },
 
-    // Mobile
     { name: 'React Native', category: 'mobile', level: 'advanced' },
 
-    // DevOps & Tools
     { name: 'Docker', category: 'devops', level: 'advanced' },
     { name: 'Git', category: 'devops', level: 'expert' },
     { name: 'CI/CD', category: 'devops', level: 'advanced' },
@@ -42,7 +38,7 @@ export const categoryLabels = {
 } as const;
 
 export const levelColors = {
-    expert: 'from-slate-700 to-slate-600',
-    advanced: 'from-slate-600 to-slate-500',
-    intermediate: 'from-slate-500 to-slate-400',
+    expert: 'from-blue-600 to-blue-500',
+    advanced: 'from-emerald-600 to-emerald-500',
+    intermediate: 'from-amber-600 to-amber-500',
 } as const;
