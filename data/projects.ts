@@ -1,6 +1,7 @@
 import nlw from "@/public/projects/nlw.png";
 import tahr from "@/public/projects/tahr.svg";
 import vueCrud from "@/public/projects/vue-crud.svg";
+import animatedChess from "@/public/projects/animated-chess.png";
 
 import { StaticImageData } from "next/image";
 
@@ -26,6 +27,32 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    image: animatedChess,
+    title: "Animated Chess - Humanos vs. Orcs",
+    description:
+      "Um jogo de xadrez moderno e interativo com estética pixel-art única. Foca em uma experiência fluida através de animações complexas de estado e transições suaves de peças.",
+    stack: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS", "Cypress", "Jest"],
+    live: "https://animated-chess.vercel.app/",
+    repo: [
+      {
+        label: "GitHub",
+        url: "https://github.com/Trovarelli/animated-chess",
+      },
+    ],
+    role: "Frontend Developer",
+    metrics: [
+      { label: "Animações", value: "Framer Motion" },
+      { label: "Qualidade", value: "Cypress & Jest" },
+      { label: "Estilo", value: "Pixel Art" },
+    ],
+    highlights: [
+      "Animações fluidas de movimento de peças",
+      "Lógica de xadrez completa com validação real",
+      "Interface customizada inspirada em RPGs clássicos",
+      "Cobertura de testes para mecânicas de jogo",
+    ],
+  },
   {
     image: tahr,
     title: "TAHR - Technology Applied to Human Resources",
@@ -78,31 +105,6 @@ export const projects: Project[] = [
       "CRUD completo com Vue 3",
       "Gerenciamento de estado centralizado",
       "Interface responsiva com Vuetify",
-    ],
-  },
-  {
-    image: nlw,
-    title: "NLW - Next Level Week (Rocketseat)",
-    description:
-      "Plataforma de matchmaking com design moderno e interface responsiva de alta performance. Focada em conversão e usabilidade, utiliza Tailwind CSS para um sistema de design consistente e escalável.",
-    stack: ["React", "Next.js", "Tailwind", "Node.js", "Prisma", "PostgreSQL"],
-    live: "https://rocketseat-nlw-project.netlify.app/",
-    repo: [
-      {
-        label: "GitHub",
-        url: "https://github.com/Trovarelli/nlw-web-app-rocketseat-ignite",
-      },
-    ],
-    role: "Full Stack Developer",
-    metrics: [
-      { label: "Database", value: "Prisma ORM" },
-      { label: "Deploy", value: "Netlify" },
-    ],
-    highlights: [
-      "Design system consistente com Tailwind CSS",
-      "Layout responsivo focado em mobile-first",
-      "Navegação fluida e transições suaves",
-      "Integração full-stack com Prisma ORM",
     ],
   },
 ];
