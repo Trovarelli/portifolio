@@ -30,7 +30,7 @@ export const projects: Project[] = [
     image: tahr,
     title: "TAHR - Technology Applied to Human Resources",
     description:
-      "Plataforma completa de gestão de RH que automatiza triagem de currículos e reduz tempo de recrutamento. Sistema full-stack com autenticação JWT, parsing inteligente de PDFs e arquitetura containerizada para deploy escalável.",
+      "Plataforma de gestão de RH focada em UX e acessibilidade, com interface totalmente responsiva e componentes modulares. Automatiza a triagem de currículos garantindo uma experiência fluida para recrutadores e candidatos.",
     stack: ["React", "Next.js", "Tailwind", "Node.js", "Express", "MongoDB", "TypeScript", "Docker", "JWT"],
     live: "https://tahr.vercel.app/",
     repo: [
@@ -50,10 +50,10 @@ export const projects: Project[] = [
       { label: "Autenticação", value: "JWT seguro" },
     ],
     highlights: [
-      "Arquitetura full-stack completa",
-      "Sistema de autenticação robusto",
-      "Upload e parsing de documentos",
-      "Containerização com Docker",
+      "Interface responsiva e acessível (a11y)",
+      "Sistema de design modular e componentizado",
+      "Experiência de usuário (UX) otimizada",
+      "Upload e parsing inteligente de documentos",
     ],
   },
   {
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     image: nlw,
     title: "NLW - Next Level Week (Rocketseat)",
     description:
-      "Plataforma de matchmaking para gamers que conecta jogadores com interesses semelhantes. Implementa sistema de anúncios e descoberta com stack moderna (Next.js, Prisma ORM, PostgreSQL) e interface responsiva otimizada para conversão.",
+      "Plataforma de matchmaking com design moderno e interface responsiva de alta performance. Focada em conversão e usabilidade, utiliza Tailwind CSS para um sistema de design consistente e escalável.",
     stack: ["React", "Next.js", "Tailwind", "Node.js", "Prisma", "PostgreSQL"],
     live: "https://rocketseat-nlw-project.netlify.app/",
     repo: [
@@ -99,9 +99,10 @@ export const projects: Project[] = [
       { label: "Deploy", value: "Netlify" },
     ],
     highlights: [
-      "Integração full-stack com Prisma",
-      "Interface moderna com Tailwind",
-      "Sistema de matchmaking de jogadores",
+      "Design system consistente com Tailwind CSS",
+      "Layout responsivo focado em mobile-first",
+      "Navegação fluida e transições suaves",
+      "Integração full-stack com Prisma ORM",
     ],
   },
 ];

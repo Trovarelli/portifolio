@@ -13,23 +13,21 @@ export default function ProjectCard({ p }: { p: Project }) {
 
   return (
     <motion.article 
-      className="bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 rounded-2xl p-5 flex flex-col justify-between card-hover h-full"
+      className="group bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 rounded-2xl p-5 flex flex-col justify-between card-hover h-full"
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2 }}
     >
-      {/* Image */}
-      <div className="relative aspect-video rounded-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 mb-4">
+      <div className="relative aspect-video rounded-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 mb-4 shadow-md group-hover:shadow-xl transition-shadow duration-300">
         <Image
           src={p.image}
           alt={`Capa do projeto ${p.title}`}
           fill
-          className="object-cover transition-transform duration-300 hover:scale-105"
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, 50vw"
           priority={false}
         />
       </div>
 
-      {/* Title and Role */}
       <div className="mb-2">
         <h3 className="text-lg font-bold">{p.title}</h3>
         {p.role && (
@@ -39,12 +37,10 @@ export default function ProjectCard({ p }: { p: Project }) {
         )}
       </div>
 
-      {/* Description */}
       <p className="text-sm text-slate-600 dark:text-slate-300 mb-3">
         {p.description}
       </p>
 
-      {/* Metrics */}
       {metrics.length > 0 && (
         <div className="mb-3 flex flex-wrap gap-2">
           {metrics.map((metric, idx) => (
@@ -64,7 +60,6 @@ export default function ProjectCard({ p }: { p: Project }) {
         </div>
       )}
 
-      {/* Highlights */}
       {highlights.length > 0 && (
         <div className="mb-3">
           <div className="flex items-center gap-1 mb-2">
@@ -85,7 +80,6 @@ export default function ProjectCard({ p }: { p: Project }) {
       )}
 
       <div className="mt-auto pt-3 border-t border-slate-200 dark:border-slate-800">
-        {/* Tech Stack */}
         <div className="mb-3 flex flex-wrap gap-2">
           {stack.map((s) => (
             <span
@@ -97,7 +91,6 @@ export default function ProjectCard({ p }: { p: Project }) {
           ))}
         </div>
 
-        {/* Links */}
         <div className="flex flex-wrap items-center gap-3">
           {hasLive && (
             <a
