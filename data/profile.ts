@@ -12,7 +12,7 @@ export const profile = {
   email: "jtneto.dev@gmail.com",
   github: "https://github.com/Trovarelli",
   githubUsername: "Trovarelli",
-  linkedin: "https://www.linkedin.com/in/jos%C3%A9-trovarelli-neto-31b2801b9/",
+  linkedin: "https://www.linkedin.com/in/jose-trovarelli-neto/",
   resumeUrl: `${basePath}/cv.pdf`,
   tech: [
     "React",
