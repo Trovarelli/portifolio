@@ -1,6 +1,7 @@
 # Portfólio Profissional – Trovarelli
 
-[🔗 Acesse o projeto online](https://trovarelli.github.io/portifolio/)
+[🔗 Acesse o projeto online](https://trovarelli.github.io/portifolio/)  
+[📄 Ver meu CV](https://trovarelli.github.io/portifolio/cv/)
 
 Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minhas experiências, habilidades e principais projetos de forma moderna e responsiva.
 
