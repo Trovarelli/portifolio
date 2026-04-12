@@ -173,7 +173,7 @@ export default function CVPage() {
           </button>
           <header>
             <h1>José Trovarelli Neto</h1>
-            <div className="subtitle">Software Engineer | Full Stack Developer</div>
+            <div className="subtitle">Software Engineer | Backend & Full Stack Developer</div>
             <div className="contact-info">
               Bariri, SP • (14) 99188-6974 • <a href="mailto:jtneto.dev@gmail.com">jtneto.dev@gmail.com</a><br />
               <a href="https://www.linkedin.com/in/josetrovarelli" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
@@ -185,17 +185,17 @@ export default function CVPage() {
           <section>
             <h2>Resumo Profissional</h2>
             <p>
-              Engenheiro de Software Full Stack com forte viés em Frontend e UX. Especialista no ecossistema <strong>React.js, Next.js e TypeScript</strong>, com sólida capacidade de resolver problemas complexos no Backend (<strong>Node.js e Golang</strong>). Experiência comprovada em otimização de performance web (redução de latência crítica em 90%) e construção de interfaces escaláveis para produtos B2B.
+              Engenheiro de Software com foco em <strong>Backend e Sistemas Escaláveis</strong>. Especialista no desenvolvimento de APIs robustas e microsserviços utilizando <strong>Node.js e Golang</strong>, com sólida experiência em otimização de performance (redução de latência em 90%) e integrações complexas (WhatsApp Business API). Proficiente em modelagem de dados (PostgreSQL/MongoDB) e arquitetura nativa em nuvem com Docker. Complemento as soluções com domínio em React/Next.js para criar ferramentas internas e dashboards de alta performance.
             </p>
           </section>
 
           <section>
             <h2>Competências Técnicas</h2>
             <ul>
-              <li><strong>Frontend Core:</strong> React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS.</li>
-              <li><strong>Backend & Integração:</strong> Node.js, Golang (Go), RESTful APIs, Integração de APIs (WhatsApp/Payment), SSR.</li>
-              <li><strong>Banco de Dados:</strong> PostgreSQL (Otimização de Queries), MongoDB.</li>
-              <li><strong>DevOps & Ferramentas:</strong> Git, Docker, CI/CD (GitHub Actions), Figma (Pixel-perfect), SCRUM.</li>
+              <li><strong>Backend & Integração:</strong> Node.js, Golang (Go), RESTful APIs, Integração de APIs (WhatsApp/Payment), Filas de Processamento (BullMQ), Webhooks.</li>
+              <li><strong>Banco de Dados & Infra:</strong> PostgreSQL (Otimização de Queries), MongoDB, Docker, CI/CD (GitHub Actions), Git.</li>
+              <li><strong>Frontend:</strong> React.js, Next.js, TypeScript, Tailwind CSS, Vue.js/Nuxt.js, SSR, SEO.</li>
+              <li><strong>Ferramentas & Metodologias:</strong> Linux, Figma, SCRUM, Testes Automatizados (Jest/Cypress).</li>
             </ul>
           </section>
 
@@ -208,14 +208,14 @@ export default function CVPage() {
                 <span className="location">Bariri, SP</span>
               </div>
               <div className="job-header">
-                <span className="role">Software Engineer (Full Stack)</span>
+                <span className="role">Software Engineer (Backend Focused)</span>
                 <span className="date">Out 2022 – Presente</span>
               </div>
               <ul>
-                <li>Desenvolvimento de interfaces modernas e responsivas utilizando <strong>Next.js e React</strong>, criando dashboards administrativos focados em usabilidade e visualização de dados.</li>
-                <li><strong>Otimização de Performance (Case de Sucesso):</strong> Refatoração de rotinas críticas de processamento, reduzindo o tempo de espera do usuário de <strong>1 minuto para 5 segundos</strong> através de otimização Backend (Go) e Frontend.</li>
-                <li>Engenharia de sistema de mensageria robusto integrado à API oficial do WhatsApp, utilizando <strong>BullMQ</strong> e Node.js para garantir entrega confiável em larga escala.</li>
-                <li>Implementação de testes automatizados e Code Reviews, garantindo a estabilidade das entregas em produção.</li>
+                <li><strong>Otimização de Performance (Backend):</strong> Refatoração de rotinas críticas de processamento em Go, reduzindo o tempo de resposta de <strong>1 minuto para 5 segundos</strong> em endpoints de alto volume.</li>
+                <li><strong>Arquitetura de Mensageria:</strong> Engenharia de sistema de comunicação robusto integrado à API oficial do WhatsApp, utilizando <strong>BullMQ</strong> e Node.js para garantir entrega confiável em larga escala.</li>
+                <li><strong>Desenvolvimento de APIs:</strong> Criação e manutenção de APIs RESTful escaláveis utilizando Golang e Node.js para operações corporativas B2B críticas.</li>
+                <li><strong>Dashboards & UX:</strong> Desenvolvimento de interfaces administrativas de alto desempenho com Next.js, focadas em visualização de dados complexos e ferramentas internas.</li>
               </ul>
             </div>
 

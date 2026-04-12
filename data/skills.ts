@@ -5,14 +5,6 @@ export type Skill = {
 };
 
 export const skills: Skill[] = [
-    { name: 'React', category: 'frontend', level: 'expert' },
-    { name: 'Next.js', category: 'frontend', level: 'expert' },
-    { name: 'TypeScript', category: 'frontend', level: 'expert' },
-    { name: 'JavaScript', category: 'frontend', level: 'expert' },
-    { name: 'Tailwind CSS', category: 'frontend', level: 'advanced' },
-    { name: 'Vue.js', category: 'frontend', level: 'advanced' },
-    { name: 'HTML/CSS', category: 'frontend', level: 'expert' },
-
     { name: 'Golang', category: 'backend', level: 'advanced' },
     { name: 'Node.js', category: 'backend', level: 'advanced' },
     { name: 'Express', category: 'backend', level: 'advanced' },
@@ -21,12 +13,20 @@ export const skills: Skill[] = [
     { name: 'REST APIs', category: 'backend', level: 'expert' },
     { name: 'Prisma', category: 'backend', level: 'advanced' },
 
-    { name: 'React Native', category: 'mobile', level: 'advanced' },
-
     { name: 'Docker', category: 'devops', level: 'advanced' },
     { name: 'Git', category: 'devops', level: 'expert' },
     { name: 'CI/CD', category: 'devops', level: 'advanced' },
     { name: 'Linux', category: 'devops', level: 'intermediate' },
+
+    { name: 'React', category: 'frontend', level: 'expert' },
+    { name: 'Next.js', category: 'frontend', level: 'expert' },
+    { name: 'TypeScript', category: 'frontend', level: 'expert' },
+    { name: 'JavaScript', category: 'frontend', level: 'expert' },
+    { name: 'Tailwind CSS', category: 'frontend', level: 'advanced' },
+    { name: 'Vue.js', category: 'frontend', level: 'advanced' },
+    { name: 'HTML/CSS', category: 'frontend', level: 'expert' },
+
+    { name: 'React Native', category: 'mobile', level: 'advanced' },
 ];
 
 export const categoryLabels = {

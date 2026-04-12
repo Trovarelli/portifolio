@@ -34,7 +34,7 @@ utils/         # Funções utilitárias
 
 ## 💼 Sobre Mim
 
-Sou desenvolvedor apaixonado por tecnologia, com experiência em projetos web modernos, foco em usabilidade e performance. Busco oportunidades para contribuir em equipes inovadoras e crescer profissionalmente.
+Sou Engenheiro de Software com foco em desenvolvimento Backend e sistemas escaláveis. Especialista em construir APIs robustas e performáticas utilizando Golang e Node.js, com profundo conhecimento em integrações complexas e otimização de sistemas. Busco oportunidades para resolver desafios técnicos complexos e contribuir para arquiteturas de software resilientes.
 
 ## 📧 Contato
 

@@ -28,11 +28,41 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    image: animatedChess,
-    title: "Animated Chess - Humanos vs. Orcs",
+    image: tahr,
+    title: "TAHR - Gestão de RH e Triagem Inteligente",
     description:
-      "Um jogo de xadrez moderno e interativo com estética pixel-art única. Foca em uma experiência fluida através de animações complexas de estado e transições suaves de peças.",
-    stack: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS", "Cypress", "Jest"],
+      "Plataforma completa de gestão de RH com arquitetura distribuída. Desenvolvi o backend escalável utilizando Node.js e MongoDB, implementando parsing inteligente de documentos, autenticação segura com JWT e fluxos de trabalho assíncronos.",
+    stack: ["Node.js", "Express", "MongoDB", "TypeScript", "Docker", "JWT", "React", "Next.js"],
+    live: "https://tahr.vercel.app/",
+    repo: [
+      {
+        label: "GitHub - Back-end",
+        url: "https://github.com/Trovarelli/TCC-Back-end",
+      },
+      {
+        label: "GitHub - Front-end",
+        url: "https://github.com/Trovarelli/TCC-Front-end",
+      },
+    ],
+    role: "Lead Backend Developer",
+    metrics: [
+      { label: "Segurança", value: "JWT Auth" },
+      { label: "Upload", value: "Parsing via Backend" },
+      { label: "Infra", value: "Dockerizada" },
+    ],
+    highlights: [
+      "Arquitetura de API robusta e escalável",
+      "Parsing inteligente de documentos PDF/Docx",
+      "Modelagem de dados complexa em MongoDB",
+      "Sistema de autenticação e autorização seguro",
+    ],
+  },
+  {
+    image: animatedChess,
+    title: "Animated Chess - Engine & Lógica de Jogo",
+    description:
+      "Um simulador de xadrez focado na implementação de lógica de jogo complexa e gerenciamento de estado determinístico. O projeto demonstra a aplicação de algoritmos de validação de movimentos e integridade de estado em tempo real.",
+    stack: ["TypeScript", "Next.js", "Jest", "Cypress", "Framer Motion"],
     live: "https://animated-chess.vercel.app/",
     repo: [
       {
@@ -40,54 +70,24 @@ export const projects: Project[] = [
         url: "https://github.com/Trovarelli/animated-chess",
       },
     ],
-    role: "Frontend Developer",
+    role: "Software Engineer",
     metrics: [
-      { label: "Animações", value: "Framer Motion" },
-      { label: "Qualidade", value: "Cypress & Jest" },
-      { label: "Estilo", value: "Pixel Art" },
+      { label: "Lógica", value: "Validação Real" },
+      { label: "Qualidade", value: "Testes Unitários" },
+      { label: "Estado", value: "Gestão Complexa" },
     ],
     highlights: [
-      "Animações fluidas de movimento de peças",
-      "Lógica de xadrez completa com validação real",
-      "Interface customizada inspirada em RPGs clássicos",
-      "Cobertura de testes para mecânicas de jogo",
-    ],
-  },
-  {
-    image: tahr,
-    title: "TAHR - Technology Applied to Human Resources",
-    description:
-      "Plataforma de gestão de RH focada em UX e acessibilidade, com interface totalmente responsiva e componentes modulares. Automatiza a triagem de currículos garantindo uma experiência fluida para recrutadores e candidatos.",
-    stack: ["React", "Next.js", "Tailwind", "Node.js", "Express", "MongoDB", "TypeScript", "Docker", "JWT"],
-    live: "https://tahr.vercel.app/",
-    repo: [
-      {
-        label: "GitHub - Front-end",
-        url: "https://github.com/Trovarelli/TCC-Front-end",
-      },
-      {
-        label: "GitHub - Back-end",
-        url: "https://github.com/Trovarelli/TCC-Back-end",
-      },
-    ],
-    role: "Full Stack Developer & Tech Lead",
-    metrics: [
-      { label: "Performance", value: "95+ Lighthouse" },
-      { label: "Upload", value: "< 2s para PDFs" },
-      { label: "Autenticação", value: "JWT seguro" },
-    ],
-    highlights: [
-      "Interface responsiva e acessível (a11y)",
-      "Sistema de design modular e componentizado",
-      "Experiência de usuário (UX) otimizada",
-      "Upload e parsing inteligente de documentos",
+      "Implementação integral das regras da FIDE",
+      "Arquitetura de estado previsível e testável",
+      "Cobertura abrangente de testes de lógica",
+      "Otimização de performance de renderização",
     ],
   },
   {
     image: vueCrud,
-    title: "Cadastro de Clientes (vue-crud-app)",
+    title: "Sistema de Gestão (vue-crud-app)",
     description:
-      "Aplicação de gerenciamento de clientes e produtos com arquitetura Vue 3, state management centralizado via Vuex e interface material design. Implementa padrões modernos de componentização e tipagem forte com TypeScript.",
+      "Aplicação para gerenciamento de dados corporativos com foco em padrões de arquitetura modernos, gerenciamento de estado centralizado e interfaces eficientes.",
     stack: ["Vue.js", "Vuex", "Vuetify", "TypeScript"],
     live: "https://vue-crud-app-7e3w.onrender.com/",
     repo: [
@@ -98,13 +98,13 @@ export const projects: Project[] = [
     ],
     role: "Frontend Developer",
     metrics: [
-      { label: "State Management", value: "Vuex" },
-      { label: "UI Framework", value: "Vuetify" },
+      { label: "Estado", value: "Vuex Central" },
+      { label: "Patterns", value: "Componentização" },
     ],
     highlights: [
-      "CRUD completo com Vue 3",
-      "Gerenciamento de estado centralizado",
-      "Interface responsiva com Vuetify",
+      "CRUD completo com padrões de design",
+      "Gerenciamento de fluxo de dados robusto",
+      "Interface responsiva e profissional",
     ],
   },
 ];

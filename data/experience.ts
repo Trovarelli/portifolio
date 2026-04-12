@@ -7,15 +7,15 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Desenvolvedor Full Stack',
+    role: 'Software Engineer (Backend Focused)',
     company: 'DOMTEC SISTEMAS',
     period: '2022 — Presente',
     bullets: [
-      'Desenvolvimento e manutenção de aplicações full stack com React.js/Next.js + TypeScript no front-end e Golang/Node.js no back-end, atendendo demandas corporativas e operações em larga escala.',
-      'Criação e evolução de APIs REST para integrações corporativas, incluindo integração com API oficial do WhatsApp, implementação de filas de processamento e serviços de mensageria para comunicação assíncrona.',
-      'Implementação de sistemas de autenticação JWT e controle de permissões baseado em roles (RBAC), garantindo segurança e conformidade com políticas corporativas de acesso.',
-      'Otimização de consultas críticas em PostgreSQL, reduzindo tempos de resposta de rotinas intensivas e melhorando performance de endpoints com alto volume de requisições.',
-      'Construção de dashboards administrativos e módulos de gestão com foco em UX, performance e escalabilidade, incluindo visualização de dados e interfaces responsivas.',
+      'Engenharia de sistema de mensageria robusto integrado à API oficial do WhatsApp, utilizando Node.js e filas de processamento para garantir entregas em larga escala.',
+      'Otimização de consultas críticas em PostgreSQL, reduzindo tempos de resposta de rotinas intensivas e melhorando drasticamente a performance de endpoints com alto volume.',
+      'Desenvolvimento e evolução de APIs REST escaláveis utilizando Golang e Node.js para operações corporativas críticas.',
+      'Implementação de sistemas de segurança avançados (autenticação JWT e RBAC) para controle de acesso granular em ambiente B2B.',
+      'Desenvolvimento de dashboards administrativos de alta performance com React/Next.js, focados em visualização de dados complexos.',
     ],
   },
   {
