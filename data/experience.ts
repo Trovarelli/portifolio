@@ -7,13 +7,13 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Software Engineer (Backend Focused)',
+    role: 'Backend Engineer | Golang Developer',
     company: 'DOMTEC SISTEMAS',
     period: '2022 — Presente',
     bullets: [
       'Engenharia de sistema de mensageria robusto integrado à API oficial do WhatsApp, utilizando Node.js e filas de processamento para garantir entregas em larga escala.',
       'Otimização de consultas críticas em PostgreSQL, reduzindo tempos de resposta de rotinas intensivas e melhorando drasticamente a performance de endpoints com alto volume.',
-      'Desenvolvimento e evolução de APIs REST escaláveis utilizando Golang e Node.js para operações corporativas críticas.',
+      'Desenvolvimento e evolução de microsserviços e APIs escaláveis utilizando Golang e Node.js para operações corporativas críticas.',
       'Implementação de sistemas de segurança avançados (autenticação JWT e RBAC) para controle de acesso granular em ambiente B2B.',
       'Desenvolvimento de dashboards administrativos de alta performance com React/Next.js, focados em visualização de dados complexos.',
     ],

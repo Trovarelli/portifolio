@@ -6,8 +6,8 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const profile = {
   name: "José Trovarelli Neto",
-  headline: "Engenharia de Software & Desenvolvimento Backend",
-  about: `Engenheiro de Software com foco em Backend e Desenvolvimento Full Stack, acumulando ${experienciaCalculada} de experiência na construção de sistemas escaláveis e de alta performance. Especialista na criação de APIs REST robustas e microsserviços utilizando Golang e Node.js, com profundo conhecimento em integrações complexas (WhatsApp Business API, sistemas de mensageria assíncrona) e segurança (JWT/RBAC). Possuo sólida experiência em modelagem e otimização de bancos de dados (PostgreSQL, MongoDB) e infraestrutura com Docker e CI/CD. No frontend, complemento as soluções com interfaces performáticas em React/Next.js e Vue/Nuxt.`,
+  headline: "Backend Developer & Golang Specialist",
+  about: `Engenheiro de Software com foco em Backend Development e Golang, acumulando ${experienciaCalculada} de experiência na construção de sistemas distribuídos de alta performance e microsserviços. Sou aluno da pós-graduação 'Go Expert' da Full Cycle, aprofundando meus conhecimentos em concorrência (Goroutines e Channels), gRPC, Clean Architecture e Mensageria (RabbitMQ/Kafka). Possuo sólida experiência na criação de APIs REST robustas, modelagem de bancos de dados e infraestrutura com Docker e CI/CD.`,
   location: "Brasil • Remoto",
   email: "jtneto.dev@gmail.com",
   github: "https://github.com/Trovarelli",
@@ -16,12 +16,12 @@ export const profile = {
   resumeUrl: `${basePath}/cv`,
   tech: [
     "Golang",
-    "Node.js",
+    "gRPC",
+    "RabbitMQ",
+    "Kafka",
+    "Microservices",
     "PostgreSQL",
     "Docker",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "React Native",
+    "Node.js",
   ],
 } as const;

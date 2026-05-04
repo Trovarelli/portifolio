@@ -173,7 +173,7 @@ export default function CVPage() {
           </button>
           <header>
             <h1>José Trovarelli Neto</h1>
-            <div className="subtitle">Software Engineer | Backend & Full Stack Developer</div>
+            <div className="subtitle">Software Engineer | Backend & Golang Specialist</div>
             <div className="contact-info">
               Bariri, SP • (14) 99188-6974 • <a href="mailto:jtneto.dev@gmail.com">jtneto.dev@gmail.com</a><br />
               <a href="https://www.linkedin.com/in/josetrovarelli" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
@@ -185,17 +185,17 @@ export default function CVPage() {
           <section>
             <h2>Resumo Profissional</h2>
             <p>
-              Engenheiro de Software com foco em <strong>Backend e Sistemas Escaláveis</strong>. Especialista no desenvolvimento de APIs robustas e microsserviços utilizando <strong>Node.js e Golang</strong>, com sólida experiência em otimização de performance (redução de latência em 90%) e integrações complexas (WhatsApp Business API). Proficiente em modelagem de dados (PostgreSQL/MongoDB) e arquitetura nativa em nuvem com Docker. Complemento as soluções com domínio em React/Next.js para criar ferramentas internas e dashboards de alta performance.
+              Engenheiro de Software focado em desenvolvimento Backend com Go (Golang). Tenho experiência prática na construção de sistemas distribuídos e microsserviços de alta performance. Para elevar ainda mais a qualidade das minhas entregas, atualmente curso a pós-graduação 'Go Expert' da Full Cycle. Meu dia a dia e meus estudos estão voltados para a criação de arquiteturas escaláveis (Clean Architecture), uso avançado de concorrência (Goroutines e Channels), gRPC e mensageria (RabbitMQ/Kafka). Também trago uma base sólida em otimização de integrações, bancos de dados (PostgreSQL/MongoDB) e ecossistema Docker.
             </p>
           </section>
 
           <section>
             <h2>Competências Técnicas</h2>
             <ul>
-              <li><strong>Backend & Integração:</strong> Node.js, Golang (Go), RESTful APIs, Integração de APIs (WhatsApp/Payment), Filas de Processamento (BullMQ), Webhooks.</li>
-              <li><strong>Banco de Dados & Infra:</strong> PostgreSQL (Otimização de Queries), MongoDB, Docker, CI/CD (GitHub Actions), Git.</li>
-              <li><strong>Frontend:</strong> React.js, Next.js, TypeScript, Tailwind CSS, Vue.js/Nuxt.js, SSR, SEO.</li>
-              <li><strong>Ferramentas & Metodologias:</strong> Linux, Figma, SCRUM, Testes Automatizados (Jest/Cypress).</li>
+              <li><strong>Linguagens & Arquitetura:</strong> Golang (Go), Clean Architecture, Microsserviços, Sistemas Distribuídos de Alta Performance, Concorrência (Goroutines e Channels).</li>
+              <li><strong>Comunicação & Mensageria:</strong> gRPC, RESTful APIs, RabbitMQ, Kafka, Webhooks.</li>
+              <li><strong>Banco de Dados & Infra:</strong> PostgreSQL (Otimização de Queries), MongoDB, Docker, CI/CD (GitHub Actions), Git, Linux.</li>
+              <li><strong>Outras Tecnologias:</strong> Node.js, TypeScript, React.js, Next.js.</li>
             </ul>
           </section>
 
@@ -238,12 +238,21 @@ export default function CVPage() {
           </section>
 
           <section>
-            <h2>Formação Acadêmica</h2>
-            <div className="job-header">
-              <span className="company">FATEC Jahu</span>
-              <span className="date">Concluído em 2023</span>
+            <h2>Formação Acadêmica & Especializações</h2>
+            <div className="job-entry" style={{ marginBottom: '10px' }}>
+              <div className="job-header">
+                <span className="company">Full Cycle</span>
+                <span className="date">Em andamento</span>
+              </div>
+              <div>Pós-graduação: Go Expert</div>
             </div>
-            <div>Tecnologia em Sistemas para Internet</div>
+            <div className="job-entry" style={{ marginBottom: '10px' }}>
+              <div className="job-header">
+                <span className="company">FATEC Jahu</span>
+                <span className="date">Concluído em 2023</span>
+              </div>
+              <div>Tecnologia em Sistemas para Internet</div>
+            </div>
           </section>
 
           <section>

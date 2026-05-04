@@ -5,28 +5,25 @@ export type Skill = {
 };
 
 export const skills: Skill[] = [
-    { name: 'Golang', category: 'backend', level: 'advanced' },
+    { name: 'Golang', category: 'backend', level: 'expert' },
+    { name: 'Microservices', category: 'backend', level: 'expert' },
+    { name: 'gRPC', category: 'backend', level: 'intermediate' },
+    { name: 'RabbitMQ', category: 'backend', level: 'intermediate' },
+    { name: 'Kafka', category: 'backend', level: 'intermediate' },
+    { name: 'Clean Architecture', category: 'backend', level: 'advanced' },
     { name: 'Node.js', category: 'backend', level: 'advanced' },
-    { name: 'Express', category: 'backend', level: 'advanced' },
-    { name: 'PostgreSQL', category: 'backend', level: 'advanced' },
+    { name: 'PostgreSQL', category: 'backend', level: 'expert' },
     { name: 'MongoDB', category: 'backend', level: 'intermediate' },
     { name: 'REST APIs', category: 'backend', level: 'expert' },
-    { name: 'Prisma', category: 'backend', level: 'advanced' },
 
     { name: 'Docker', category: 'devops', level: 'advanced' },
     { name: 'Git', category: 'devops', level: 'expert' },
     { name: 'CI/CD', category: 'devops', level: 'advanced' },
     { name: 'Linux', category: 'devops', level: 'intermediate' },
 
-    { name: 'React', category: 'frontend', level: 'expert' },
-    { name: 'Next.js', category: 'frontend', level: 'expert' },
-    { name: 'TypeScript', category: 'frontend', level: 'expert' },
-    { name: 'JavaScript', category: 'frontend', level: 'expert' },
-    { name: 'Tailwind CSS', category: 'frontend', level: 'advanced' },
-    { name: 'Vue.js', category: 'frontend', level: 'advanced' },
-    { name: 'HTML/CSS', category: 'frontend', level: 'expert' },
-
-    { name: 'React Native', category: 'mobile', level: 'advanced' },
+    { name: 'TypeScript', category: 'frontend', level: 'advanced' },
+    { name: 'React/Next.js', category: 'frontend', level: 'advanced' },
+    { name: 'Tailwind CSS', category: 'frontend', level: 'intermediate' },
 ];
 
 export const categoryLabels = {

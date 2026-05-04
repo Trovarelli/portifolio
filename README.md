@@ -34,7 +34,7 @@ utils/         # Funções utilitárias
 
 ## 💼 Sobre Mim
 
-Sou Engenheiro de Software com foco em desenvolvimento Backend e sistemas escaláveis. Especialista em construir APIs robustas e performáticas utilizando Golang e Node.js, com profundo conhecimento em integrações complexas e otimização de sistemas. Busco oportunidades para resolver desafios técnicos complexos e contribuir para arquiteturas de software resilientes.
+Sou Engenheiro de Software com foco em desenvolvimento Backend e Golang. Especialista em construir sistemas distribuídos de alta performance, microsserviços e APIs robustas. Atualmente, sou aluno da pós-graduação 'Go Expert' da Full Cycle. Meu foco de estudo e atuação envolve concorrência (Goroutines e Channels), gRPC, Clean Architecture e Mensageria (RabbitMQ/Kafka), sempre buscando resolver desafios técnicos complexos e contribuir para arquiteturas de software resilientes.
 
 ## 📧 Contato
 
