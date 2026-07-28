@@ -6,26 +6,28 @@ export type Skill = {
 
 export const skills: Skill[] = [
     { name: 'Golang', category: 'backend', level: 'expert' },
-    { name: 'Microservices', category: 'backend', level: 'expert' },
-    { name: 'gRPC', category: 'backend', level: 'intermediate' },
-    { name: 'RabbitMQ', category: 'backend', level: 'intermediate' },
-    { name: 'Kafka', category: 'backend', level: 'intermediate' },
-    { name: 'Clean Architecture', category: 'backend', level: 'advanced' },
     { name: 'Node.js', category: 'backend', level: 'advanced' },
+    { name: 'Microservices', category: 'backend', level: 'expert' },
+    { name: 'Clean Architecture', category: 'backend', level: 'advanced' },
+    { name: 'REST APIs', category: 'backend', level: 'expert' },
+    { name: 'gRPC', category: 'backend', level: 'intermediate' },
+
     { name: 'PostgreSQL', category: 'backend', level: 'expert' },
     { name: 'MongoDB', category: 'backend', level: 'intermediate' },
-    { name: 'REST APIs', category: 'backend', level: 'expert' },
+    { name: 'RabbitMQ', category: 'backend', level: 'intermediate' },
+    { name: 'Kafka', category: 'backend', level: 'intermediate' },
 
     { name: 'Docker', category: 'devops', level: 'advanced' },
-    { name: 'Git', category: 'devops', level: 'expert' },
     { name: 'CI/CD', category: 'devops', level: 'advanced' },
+    { name: 'Git', category: 'devops', level: 'expert' },
     { name: 'Linux', category: 'devops', level: 'intermediate' },
 
     { name: 'TypeScript', category: 'frontend', level: 'advanced' },
     { name: 'React/Next.js', category: 'frontend', level: 'advanced' },
-    { name: 'Tailwind CSS', category: 'frontend', level: 'intermediate' },
-];
+    { name: 'Tailwind CSS', category: 'frontend', level: 'advanced' },
 
+    { name: 'React Native', category: 'mobile', level: 'intermediate' },
+];
 export const categoryLabels = {
     frontend: 'Frontend',
     backend: 'Backend',

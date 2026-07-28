@@ -3,7 +3,7 @@
 export default function CVPage() {
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: `
+           <style dangerouslySetInnerHTML={{ __html: `
         @page {
           size: A4;
           margin: 0;
@@ -173,10 +173,10 @@ export default function CVPage() {
           </button>
           <header>
             <h1>José Trovarelli Neto</h1>
-            <div className="subtitle">Software Engineer | Backend & Golang Specialist</div>
+            <div className="subtitle">Software Engineer | Backend & System Architecture</div>
             <div className="contact-info">
               Bariri, SP • (14) 99188-6974 • <a href="mailto:jtneto.dev@gmail.com">jtneto.dev@gmail.com</a><br />
-              <a href="https://www.linkedin.com/in/josetrovarelli" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
+              <a href="https://www.linkedin.com/in/jose-trovarelli-neto/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
               <a href="https://github.com/Trovarelli" target="_blank" rel="noopener noreferrer">GitHub</a> • 
               <a href="https://trovarelli.github.io/portifolio/" target="_blank" rel="noopener noreferrer">Portfólio</a>
             </div>
@@ -185,17 +185,17 @@ export default function CVPage() {
           <section>
             <h2>Resumo Profissional</h2>
             <p>
-              Engenheiro de Software focado em desenvolvimento Backend com Go (Golang). Tenho experiência prática na construção de sistemas distribuídos e microsserviços de alta performance. Para elevar ainda mais a qualidade das minhas entregas, atualmente curso a pós-graduação 'Go Expert' da Full Cycle. Meu dia a dia e meus estudos estão voltados para a criação de arquiteturas escaláveis (Clean Architecture), uso avançado de concorrência (Goroutines e Channels), gRPC e mensageria (RabbitMQ/Kafka). Também trago uma base sólida em otimização de integrações, bancos de dados (PostgreSQL/MongoDB) e ecossistema Docker.
+              Engenheiro de Software com sólida experiência na construção de sistemas distribuídos e de alta performance. Minha atuação principal é no Back-end (Golang e Node.js), projetando arquiteturas resilientes e sustentáveis. Atualmente curso a pós-graduação "Go Expert" (Full Cycle) para elevar a robustez das minhas entregas. Acredito que o desenvolvimento de software vai além do código: envolve comunicação clara, trabalho em equipe e análise cuidadosa de trade-offs. Trago uma base sólida em mensageria, otimização de banco de dados e vivência Full Stack, alinhando a eficiência da infraestrutura às necessidades de negócio.
             </p>
           </section>
 
           <section>
             <h2>Competências Técnicas</h2>
             <ul>
-              <li><strong>Linguagens & Arquitetura:</strong> Golang (Go), Clean Architecture, Microsserviços, Sistemas Distribuídos de Alta Performance, Concorrência (Goroutines e Channels).</li>
-              <li><strong>Comunicação & Mensageria:</strong> gRPC, RESTful APIs, RabbitMQ, Kafka, Webhooks.</li>
-              <li><strong>Banco de Dados & Infra:</strong> PostgreSQL (Otimização de Queries), MongoDB, Docker, CI/CD (GitHub Actions), Git, Linux.</li>
-              <li><strong>Outras Tecnologias:</strong> Node.js, TypeScript, React.js, Next.js.</li>
+              <li><strong>Core Backend & Arquitetura:</strong> Golang (Go), Node.js, Clean Architecture, Microsserviços, Design de Sistemas Distribuídos, Concorrência (Goroutines/Channels), REST APIs, gRPC.</li>
+              <li><strong>Dados & Mensageria:</strong> PostgreSQL (Otimização de Consultas), MongoDB, RabbitMQ, Kafka, BullMQ.</li>
+              <li><strong>Infraestrutura & Cultura DevOps:</strong> Docker, CI/CD (GitHub Actions), Git, Linux, Code Review.</li>
+              <li><strong>Interface & Experiência (Full Stack):</strong> TypeScript, React.js, Next.js, Tailwind CSS, Vue.js.</li>
             </ul>
           </section>
 
@@ -208,14 +208,15 @@ export default function CVPage() {
                 <span className="location">Bariri, SP</span>
               </div>
               <div className="job-header">
-                <span className="role">Software Engineer (Backend Focused)</span>
+                <span className="role">Software Engineer</span>
                 <span className="date">Out 2022 – Presente</span>
               </div>
               <ul>
-                <li><strong>Otimização de Performance (Backend):</strong> Refatoração de rotinas críticas de processamento em Go, reduzindo o tempo de resposta de <strong>1 minuto para 5 segundos</strong> em endpoints de alto volume.</li>
-                <li><strong>Arquitetura de Mensageria:</strong> Engenharia de sistema de comunicação robusto integrado à API oficial do WhatsApp, utilizando <strong>BullMQ</strong> e Node.js para garantir entrega confiável em larga escala.</li>
-                <li><strong>Desenvolvimento de APIs:</strong> Criação e manutenção de APIs RESTful escaláveis utilizando Golang e Node.js para operações corporativas B2B críticas.</li>
-                <li><strong>Dashboards & UX:</strong> Desenvolvimento de interfaces administrativas de alto desempenho com Next.js, focadas em visualização de dados complexos e ferramentas internas.</li>
+                <li><strong>Otimização de Vazão de Dados:</strong> Refatoração estrutural de pipelines legados no PostgreSQL, aplicando estratégias de processamento em lote que reduziram o tempo de resposta de 1 minuto para ~5 segundos em rotinas críticas.</li>
+                <li><strong>Arquitetura Orientada a Eventos:</strong> Engenharia de integração com a API Oficial do WhatsApp, implementando filas com Node.js (BullMQ) para garantir controle de concorrência e resiliência a falhas em larga escala.</li>
+                <li><strong>Engenharia Backend:</strong> Desenvolvimento e evolução de microsserviços e APIs corporativas utilizando Golang e Node.js, priorizando estabilidade e Clean Code.</li>
+                <li><strong>Segurança & Acessos:</strong> Estruturação de camadas de segurança (Autenticação JWT e RBAC) para garantir controle granular em ambiente B2B.</li>
+                <li><strong>Visão Sistêmica:</strong> Construção de dashboards administrativos de alta performance com React/Next.js, focados na usabilidade e visualização de dados complexos.</li>
               </ul>
             </div>
 
@@ -229,24 +230,23 @@ export default function CVPage() {
                 <span className="date">Out 2021 – Set 2022</span>
               </div>
               <ul>
-                <li>Desenvolvimento de plataforma de vendas de seguros escalável utilizando <strong>Vue.js e Nuxt.js</strong> com TypeScript.</li>
-                <li>Implementação fiel de interfaces (Pixel-perfect) baseadas em protótipos Figma, garantindo consistência visual.</li>
-                <li>Otimização de <strong>Core Web Vitals</strong>, implementando Server-Side Rendering (SSR) e reduzindo o tempo de carregamento inicial em 20%.</li>
-                <li>Integração de autenticação complexa (OAuth2) e gestão de estados globais para fluxos de contratação.</li>
+                <li><strong>Plataforma B2C:</strong> Atuação no desenvolvimento de uma plataforma complexa de seguros (Vue.js, Nuxt.js e TypeScript), construindo fluxos de cotação focados em conversão.</li>
+                <li><strong>Performance (Web Vitals):</strong> Otimização da aplicação através de Server-Side Rendering (SSR), reduzindo o tempo de carregamento inicial em 20% e melhorando métricas de SEO.</li>
+                <li><strong>Padronização & Qualidade:</strong> Contribuição ativa para a estabilidade da plataforma por meio de componentização, testes e revisão de código (Code Review), promovendo boas práticas colaborativas.</li>
               </ul>
             </div>
           </section>
 
           <section>
             <h2>Formação Acadêmica & Especializações</h2>
-            <div className="job-entry" style={{ marginBottom: '10px' }}>
+            <div className="job-entry" style={{ marginBottom: '8px' }}>
               <div className="job-header">
                 <span className="company">Full Cycle</span>
                 <span className="date">Em andamento</span>
               </div>
               <div>Pós-graduação: Go Expert</div>
             </div>
-            <div className="job-entry" style={{ marginBottom: '10px' }}>
+            <div className="job-entry" style={{ marginBottom: '8px' }}>
               <div className="job-header">
                 <span className="company">FATEC Jahu</span>
                 <span className="date">Concluído em 2023</span>
@@ -256,17 +256,9 @@ export default function CVPage() {
           </section>
 
           <section>
-            <h2>Certificações</h2>
+            <h2>Certificações & Idiomas</h2>
             <ul>
-              <li>Next.js e React Avançado (FIAP/Alura)</li>
-              <li>Formação Golang (Alura)</li>
-              <li>Arquitetura de Sistemas (DIO)</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Idiomas</h2>
-            <ul>
+              <li>Next.js e React Avançado (FIAP/Alura) | Formação Golang (Alura) | Arquitetura de Sistemas (DIO)</li>
               <li><strong>Inglês:</strong> Técnico (Leitura avançada de documentação, escrita e comunicação intermediária).</li>
             </ul>
           </section>

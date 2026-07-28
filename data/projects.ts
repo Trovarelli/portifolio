@@ -31,7 +31,7 @@ export const projects: Project[] = [
     image: tahr,
     title: "TAHR - Gestão de RH e Triagem Inteligente",
     description:
-      "Plataforma completa de gestão de RH com arquitetura distribuída. Desenvolvi o backend escalável utilizando Node.js e MongoDB, implementando parsing inteligente de documentos, autenticação segura com JWT e fluxos de trabalho assíncronos.",
+      "Plataforma completa de gestão de RH com arquitetura distribuída. Desenvolvi o backend escalável utilizando Node.js e MongoDB, implementando parsing inteligente de documentos, autenticação segura com JWT e fluxos de trabalho assíncronos. Desenvolvi o frontend utilizando React e Next.js.",
     stack: ["Node.js", "Express", "MongoDB", "TypeScript", "Docker", "JWT", "React", "Next.js"],
     live: "https://tahr.vercel.app/",
     repo: [
@@ -81,30 +81,6 @@ export const projects: Project[] = [
       "Arquitetura de estado previsível e testável",
       "Cobertura abrangente de testes de lógica",
       "Otimização de performance de renderização",
-    ],
-  },
-  {
-    image: vueCrud,
-    title: "Sistema de Gestão (vue-crud-app)",
-    description:
-      "Aplicação para gerenciamento de dados corporativos com foco em padrões de arquitetura modernos, gerenciamento de estado centralizado e interfaces eficientes.",
-    stack: ["Vue.js", "Vuex", "Vuetify", "TypeScript"],
-    live: "https://vue-crud-app-7e3w.onrender.com/",
-    repo: [
-      {
-        label: "GitHub",
-        url: "https://github.com/Trovarelli/vue-crud-app",
-      },
-    ],
-    role: "Frontend Developer",
-    metrics: [
-      { label: "Estado", value: "Vuex Central" },
-      { label: "Patterns", value: "Componentização" },
-    ],
-    highlights: [
-      "CRUD completo com padrões de design",
-      "Gerenciamento de fluxo de dados robusto",
-      "Interface responsiva e profissional",
     ],
   },
 ];

@@ -1,155 +1,198 @@
 "use client";
+
 import Header from "@/components/Header";
-import ProjectCarousel from "@/components/ProjectCarousel";
+import ProjectIndex from "@/components/ProjectIndex";
 import ExperienceItem from "@/components/ExperienceItem";
 import SkillsShowcase from "@/components/SkillsShowcase";
 import ScrollProgress from "@/components/ScrollProgress";
 import AnimatedSection from "@/components/AnimatedSection";
 import GitHubRepos from "@/components/GitHubRepos";
+import BlueprintSection from "@/components/BlueprintSection";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
 import { experiences } from "@/data/experience";
-import { Globe, Mail, Briefcase, Folder } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Mail } from "lucide-react";
+
+const navItems = [
+  { href: "#about", label: "Sobre mim" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projetos", label: "Projetos" },
+  { href: "#repos", label: "Repositórios" },
+  { href: "#experiencia", label: "Experiência" },
+  { href: "#contato", label: "Contato" },
+];
 
 export default function Page() {
   const year = new Date().getFullYear();
-  
+
   return (
-    <>
+    <div className="bp-shell">
       <ScrollProgress />
-      <div className="min-h-screen">
-        <Header />
+      <div className="bp-layout">
+        <Header navItems={navItems} />
 
-        {/* About Section */}
-        <AnimatedSection className="mt-8">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="md:col-span-2 bg-white dark:bg-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-800 rounded-2xl p-6">
-              <h2 className="text-xl font-bold mb-3 gradient-text">Sobre mim</h2>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                {profile.about}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {profile.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="text-xs px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-950 ring-1 ring-slate-300 dark:ring-slate-800 text-slate-600 dark:text-slate-400"
+        <main className="bp-main">
+          <div className="bp-shell-pad">
+            <header className="bp-masthead">
+              <div className="bp-masthead-copy">
+                <p className="bp-kicker bp-accent-text">
+                  SOFTWARE ENGINEER / BACKEND SYSTEMS
+                </p>
+                <h1 className="bp-hero-title">
+                  José
+                  <br />
+                  <span>Trovarelli Neto</span>
+                </h1>
+                <div className="bp-hero-intro">
+                  <span className="bp-mono bp-accent-text">01—</span>
+                  <p>
+                    Construo sistemas distribuídos, APIs robustas e produtos
+                    digitais com foco em performance, clareza arquitetural e
+                    impacto real.
+                  </p>
+                </div>
+                <div className="bp-actions">
+                  <a
+                    href={profile.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bp-button bp-button-primary bp-focus"
                   >
-                    {t}
-                  </span>
-                ))}
+                    GitHub
+                    <ArrowUpRight aria-hidden="true" size={15} />
+                  </a>
+                  <a
+                    href="#projetos"
+                    className="bp-button bp-button-secondary bp-focus"
+                  >
+                    Ver projetos
+                    <ArrowDown aria-hidden="true" size={15} />
+                  </a>
+                </div>
               </div>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a
-                  href={profile.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800 dark:bg-slate-700 text-white font-semibold hover:bg-slate-700 dark:hover:bg-slate-600 transition-all"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={profile.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-slate-900 ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  href={profile.resumeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-slate-900 ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
-                >
-                  Currículo
-                </a>
+
+              <div className="bp-masthead-meta bp-mono">
+                <div className="bp-meta-block">
+                  <span className="bp-meta-title">SYSTEMS / {year}</span>
+                  <span>{profile.location.replace(" • ", " — ").toUpperCase()}</span>
+                </div>
+                <div className="bp-meta-note">
+                  <span>01 / 06</span>
+                  <span>Designing reliable software</span>
+                  <span>one system at a time.</span>
+                </div>
               </div>
-            </div>
-            
-            <div className="bg-slate-50 dark:bg-slate-900/40 ring-1 ring-slate-200 dark:ring-slate-800 rounded-2xl p-6">
-              <h3 className="text-base font-semibold mb-3">Disponível para remoto</h3>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
-                <li className="flex items-center gap-2">
-                  <Globe size={16} className="text-slate-600 dark:text-slate-400" /> {profile.location}
-                </li>
-                <li className="flex items-center gap-2">
-                  <Mail size={16} className="text-slate-600 dark:text-slate-400" /> {profile.email}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </AnimatedSection>
+            </header>
 
-        {/* Skills Section */}
-        <AnimatedSection delay={0.1}>
-          <SkillsShowcase />
-        </AnimatedSection>
+            <AnimatedSection>
+              <BlueprintSection id="about" index="02" eyebrow="PROFILE" title="Sobre mim">
+                <div className="bp-facts">
+                  <div className="bp-facts-copy">
+                    <p>{profile.about}</p>
+                  </div>
+                  <div className="bp-facts-aside">
+                    <div className="bp-fact-block">
+                      <p className="bp-label">Disponibilidade</p>
+                      <p className="bp-fact-value">Remoto / Brasil</p>
+                      <p className="bp-fact-copy">
+                        Aberto a projetos e oportunidades com problemas técnicos
+                        relevantes.
+                      </p>
+                    </div>
+                    <div className="bp-fact-block bp-contact-fact">
+                      <p className="bp-label">Contato direto</p>
+                      <a href={`mailto:${profile.email}`} className="bp-link bp-focus">
+                        {profile.email}
+                      </a>
+                      <a
+                        href={profile.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bp-link bp-focus"
+                      >
+                        LinkedIn <span className="bp-accent-text">↗</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </BlueprintSection>
+            </AnimatedSection>
 
-        {/* Projects Section */}
-        <AnimatedSection id="projetos" delay={0.2} className="mt-12">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-2">
-              <Folder size={20} className="text-slate-600 dark:text-slate-400" />
-              <h2 className="text-2xl font-bold">Projetos em destaque</h2>
-            </div>
-            <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-900 px-3 py-1 rounded-full">
-              {projects.length} projetos
-            </span>
-          </div>
-          <ProjectCarousel projects={projects} />
-        </AnimatedSection>
+            <AnimatedSection>
+              <BlueprintSection id="skills" index="03" eyebrow="TOOLKIT" title="Skills & Tecnologias">
+                <SkillsShowcase />
+              </BlueprintSection>
+            </AnimatedSection>
 
-        {/* GitHub Repos Section */}
-        <AnimatedSection delay={0.25}>
-          <GitHubRepos username={profile.githubUsername} />
-        </AnimatedSection>
-
-        {/* Experience Section */}
-        <AnimatedSection id="experiencia" delay={0.3} className="mt-12">
-          <div className="flex items-center gap-2 mb-6">
-            <Briefcase size={20} className="text-slate-600 dark:text-slate-400" />
-            <h2 className="text-2xl font-bold">Experiência Profissional</h2>
-          </div>
-          <ol className="relative border-s-2 border-gradient-to-b from-indigo-500 to-purple-500 ps-6 space-y-8">
-            {experiences.map((e) => (
-              <ExperienceItem key={e.role} e={e} />
-            ))}
-          </ol>
-        </AnimatedSection>
-
-        {/* Contact Section */}
-        <AnimatedSection id="contato" delay={0.4} className="mt-12">
-          <div className="bg-slate-100 dark:bg-slate-900 rounded-2xl p-8 ring-1 ring-slate-200 dark:ring-slate-800 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Vamos trabalhar juntos?</h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-2xl mx-auto">
-              Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href={`mailto:${profile.email}`}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 dark:bg-slate-700 text-white font-semibold hover:bg-slate-700 dark:hover:bg-slate-600 transition-all"
+            <AnimatedSection>
+              <BlueprintSection
+                id="projetos"
+                index="04"
+                eyebrow={`SELECTED WORK · ${String(projects.length).padStart(2, "0")} ITEMS`}
+                title="Projetos em destaque"
               >
-                <Mail size={18} />
-                Enviar E-mail
-              </a>
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white dark:bg-slate-900 ring-1 ring-slate-300 dark:ring-slate-700 text-slate-900 dark:text-white font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
-        </AnimatedSection>
+                <ProjectIndex projects={projects} />
+              </BlueprintSection>
+            </AnimatedSection>
 
-        {/* Footer */}
-        <footer className="mt-14 pb-6 text-center text-slate-500 dark:text-slate-400 text-sm">
-          <p>© {year} {profile.name}.</p>
-          <p className="mt-1">Construído com Next.js, TypeScript, Tailwind CSS e Framer Motion.</p>
-        </footer>
+            <AnimatedSection>
+              <GitHubRepos username={profile.githubUsername} />
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <BlueprintSection id="experiencia" index="06" eyebrow="CAREER LEDGER" title="Experiência Profissional">
+                <div className="bp-ledger-head">
+                  <span>Período / Localização</span>
+                  <span>Função / Empresa</span>
+                  <span>Conquistas</span>
+                </div>
+                <div className="bp-ledger-list">
+                  {experiences.map((experience) => (
+                    <ExperienceItem key={`${experience.company}-${experience.period}`} e={experience} />
+                  ))}
+                </div>
+              </BlueprintSection>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <section id="contato" className="bp-contact-section">
+                <div className="bp-contact-panel">
+                  <div>
+                    <p className="bp-kicker bp-contact-kicker">07 / OPEN CHANNEL</p>
+                    <h2>Vamos trabalhar juntos?</h2>
+                    <p className="bp-contact-copy">
+                      Estou sempre aberto a discutir novos projetos, ideias criativas
+                      ou oportunidades para fazer parte da sua visão.
+                    </p>
+                  </div>
+                  <div className="bp-contact-actions">
+                    <a href={`mailto:${profile.email}`} className="bp-contact-button bp-focus">
+                      <Mail aria-hidden="true" size={16} />
+                      Enviar e-mail <span>↗</span>
+                    </a>
+                    <a
+                      href={profile.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bp-contact-link bp-focus"
+                    >
+                      LinkedIn <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </AnimatedSection>
+
+            <footer className="bp-footer">
+              <span>
+                © {year} {profile.name} — Construído com Next.js, TypeScript,
+                Tailwind CSS e Framer Motion.
+              </span>
+              <span>PORTFOLIO / JT-001</span>
+            </footer>
+          </div>
+        </main>
       </div>
-    </>
+    </div>
   );
 }
