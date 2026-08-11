@@ -193,7 +193,7 @@ export default function CVPage() {
             <h2>Competências Técnicas</h2>
             <ul>
               <li><strong>Core Backend & Arquitetura:</strong> Golang (Go), Node.js, Clean Architecture, Microsserviços, Design de Sistemas Distribuídos, Concorrência (Goroutines/Channels), REST APIs, gRPC.</li>
-              <li><strong>Dados & Mensageria:</strong> PostgreSQL (Otimização de Consultas), MongoDB, RabbitMQ, Kafka, BullMQ.</li>
+              <li><strong>Dados & Mensageria:</strong> PostgreSQL (Otimização de Consultas), MongoDB, RabbitMQ.</li>
               <li><strong>Infraestrutura & Cultura DevOps:</strong> Docker, CI/CD (GitHub Actions), Git, Linux, Code Review.</li>
               <li><strong>Interface & Experiência (Full Stack):</strong> TypeScript, React.js, Next.js, Tailwind CSS, Vue.js.</li>
             </ul>
@@ -213,7 +213,7 @@ export default function CVPage() {
               </div>
               <ul>
                 <li><strong>Otimização de Vazão de Dados:</strong> Refatoração estrutural de pipelines legados no PostgreSQL, aplicando estratégias de processamento em lote que reduziram o tempo de resposta de 1 minuto para ~5 segundos em rotinas críticas.</li>
-                <li><strong>Arquitetura Orientada a Eventos:</strong> Engenharia de integração com a API Oficial do WhatsApp, implementando filas com Node.js (BullMQ) para garantir controle de concorrência e resiliência a falhas em larga escala.</li>
+                <li><strong>Arquitetura Orientada a Eventos:</strong> Engenharia de integração com a API Oficial do WhatsApp, implementando filas com Node.js e RabbitMQ para garantir controle de concorrência e resiliência a falhas em larga escala.</li>
                 <li><strong>Engenharia Backend:</strong> Desenvolvimento e evolução de microsserviços e APIs corporativas utilizando Golang e Node.js, priorizando estabilidade e Clean Code.</li>
                 <li><strong>Segurança & Acessos:</strong> Estruturação de camadas de segurança (Autenticação JWT e RBAC) para garantir controle granular em ambiente B2B.</li>
                 <li><strong>Visão Sistêmica:</strong> Construção de dashboards administrativos de alta performance com React/Next.js, focados na usabilidade e visualização de dados complexos.</li>

@@ -7,7 +7,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Software Engineer | Golang Developer',
+    role: 'Software Engineer | Backend Developer',
     company: 'DOMTEC SISTEMAS',
     period: '2022 — Presente',
     bullets: [
